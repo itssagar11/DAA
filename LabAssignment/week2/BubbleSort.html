@@ -1,0 +1,26 @@
+
+<script type="text/javascript">
+	//let c=3;
+	"use strict";
+ 	function BableSort(arr,len){
+ 		for(let i=0;i<len;i++){
+ 			
+ 			for(let j=0;j<len-i+1;j++){
+ 				if(arr[j]>arr[j+1]){
+ 					let temp= arr[j+1];
+ 					arr[j+1]=arr[j];
+ 					arr[j]=temp;
+ 				}
+ 			}
+ 		}
+ 		for(let i=0;i<len;i++){
+ 			console.log(arr[i]);
+ 		}
+ 	}
+
+ 	let arr=[7,3,2,5,1,45,0];
+ 	let len=7;
+ 	BableSort(arr,len);
+ //.log(id==id2);
+
+</script>	

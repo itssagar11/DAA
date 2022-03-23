@@ -9,23 +9,18 @@
 using namespace std;
 
 void Solve(){
-           ll n,k;
-           cin>>n;
+           ll n,d;
+           cin>>n>>d;
            int arr[n];
            for(int i=0;i<n;i++){
             cin>>arr[i];
            }
-           cin>>k;
-           ll steps=0;
-           for(int i=0;i<n;i++){
-            steps++;
-            if(arr[i]==k){
-              cout<<"Present "<<steps<<endl;
-              return;
-            }
-           }
-           cout<<"Not Present "<<steps<<endl;
-            
+          sort(arr,arr+n);
+          ll ans=0;
+          for(int i=0;i<n-1;i+=2){
+          	if(arr[i+1]-arr[i]<=d) ans++;
+          }
+            cout<<ans<<endl;
 
 }
 int main()
