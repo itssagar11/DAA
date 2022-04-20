@@ -1,6 +1,4 @@
-          
-      //“Saraswati Namasthubhyam Varade Kamarupini Vidhyarambam Karishyami Siddhir Bavathume Sadha”
-            // @sagar Bisht
+
 
 #include<bits/stdc++.h>
 #include<iostream>
